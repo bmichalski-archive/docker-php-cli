@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t bmichalski/php:5.6 .
+docker build -t bmichalski/php-cli:5.6 .
