@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run --rm -it bmichalski/php:5.5
+docker run --rm -it bmichalski/php:5.6
