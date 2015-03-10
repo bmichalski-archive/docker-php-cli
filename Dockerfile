@@ -1,10 +1,11 @@
 FROM bmichalski/base
 
 RUN \
-  base/configure-proxy.sh && \
+  base/configure.sh && \
   locale-gen en_US.UTF-8 && \
   export LANG=en_US.UTF-8 && \
-  apt-get install -y software-properties-common && \
+  apt-get install -y software-properties-common \
+  && \
   add-apt-repository -y ppa:ondrej/php5-5.6 && \
   apt-get update && \
   apt-get install -y \
@@ -18,4 +19,4 @@ ENV HOME /root
 
 WORKDIR /root
 
-CMD ["bash", "-c", "su - r"]
+CMD bash

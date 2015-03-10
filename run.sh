@@ -1,2 +1,5 @@
 #!/bin/bash
-docker run --rm -it bmichalski/php-cli:5.6
+docker run \
+-it \
+bmichalski/php-cli:5.6 \
+bash #-c "su - r"
