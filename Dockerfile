@@ -15,6 +15,8 @@ RUN \
   usermod -aG sudo r && \
   echo "r ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
+COPY conf/etc/php5/cli/php.ini /etc/php5/cli/php.ini
+
 ENV HOME /root
 
 WORKDIR /root
